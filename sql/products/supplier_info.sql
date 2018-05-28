@@ -21,7 +21,7 @@ CREATE TABLE supplier_info (
   COMMENT '状态: 0.禁用,1.启用',
   modified_time   TIMESTAMP                   NOT NULL  DEFAULT current_timestamp ON UPDATE current_timestamp
   COMMENT '最后修改时间',
-  PRIMARY KEY pk_supplierid(supplier_code)
+  PRIMARY KEY pk_supplierid(supplier_id)
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8

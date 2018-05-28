@@ -13,7 +13,7 @@ CREATE TABLE warehouse_product (
   COMMENT '在途数据',
   average_cost   DECIMAL(8, 2)     NOT NULL  DEFAULT 0.00
   COMMENT '移动加权成本',
-  modified_time  TIMESTAMP         NOT NULL  DEFAULT current_cnt ON UPDATE current_timestamp
+  modified_time  TIMESTAMP         NOT NULL  DEFAULT current_timestamp ON UPDATE current_timestamp
   COMMENT '最后修改时间',
   PRIMARY KEY pk_wpid(wp_id)
 )

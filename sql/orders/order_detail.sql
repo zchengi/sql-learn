@@ -20,7 +20,7 @@ CREATE TABLE order_detail (
   COMMENT '仓库ID',
   nodified_time   TIMESTAMP     NOT NULL  DEFAULT current_timestamp ON UPDATE current_timestamp
   COMMENT '最后修改时间',
-  FOREIGN KEY pk_orderdetailid (order_detail_id)
+  PRIMARY KEY pk_orderdetailid (order_detail_id)
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8
