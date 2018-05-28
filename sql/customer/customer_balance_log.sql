@@ -1,4 +1,4 @@
-CREATE TABLE customer_point_log (
+CREATE TABLE customer_balance_log (
   balance_id  INT UNSIGNED     NOT NULL  AUTO_INCREMENT
   COMMENT '余额日志ID',
   customer_id INT UNSIGNED     NOT NULL
