@@ -3,10 +3,12 @@ CREATE TABLE product_info (
   COMMENT '商品ID',
   product_code      CHAR(16)                    NOT NULL
   COMMENT '商品编码',
-  product_name      VARCHAR(20)                 NOT NULL
+  product_name      VARCHAR(50)                 NOT NULL
   COMMENT '商品名称',
   bar_code          VARCHAR(50)                 NOT NULL
   COMMENT '国条码',
+  brand_id          INT(10) UNSIGNED            NOT NULL
+  COMMENT '品牌表的ID',
   one_category_id   SMALLINT UNSIGNED           NOT NULL
   COMMENT '一级分类ID',
   two_category_id   SMALLINT UNSIGNED           NOT NULL

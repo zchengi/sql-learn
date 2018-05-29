@@ -7,6 +7,7 @@ CREATE TABLE customer_info (
   COMMENT '用户真实姓名',
   identify_card_type TINYINT(4)                  NOT NULL DEFAULT 1
   COMMENT '证件类型: 1 身份证,2 军官证,3 护照',
+  `identity_card_no` varchar(20) DEFAULT NULL COMMENT '证件号码',
   mobile_phone       INT UNSIGNED COMMENT '手机号',
   customer_email     VARCHAR(50) COMMENT '邮箱',
   gender             CHAR(1) COMMENT '性别',
